@@ -1,0 +1,184 @@
+[
+  {
+    "id": "gon_jajanken",
+    "name": "Jajanken",
+    "category": "Enhancer",
+    "user": "Gon",
+    "description": "Rock/Scissors/Paper",
+    "charge_multipliers": [
+      1.0,
+      1.2,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "id": "killua_godspeed",
+    "name": "Godspeed",
+    "category": "Transmuter",
+    "user": "Killua",
+    "description": "Lightning speed",
+    "charge_multipliers": [
+      1.0,
+      1.1,
+      1.25,
+      1.6
+    ]
+  },
+  {
+    "id": "hisoka_bungee_gum",
+    "name": "Bungee Gum",
+    "category": "Transmuter",
+    "user": "Hisoka",
+    "description": "Elastic aura",
+    "charge_multipliers": [
+      1.0,
+      1.05,
+      1.15,
+      1.3
+    ]
+  },
+  {
+    "id": "kurapika_chain_jail",
+    "name": "Chain Jail",
+    "category": "Conjurer",
+    "user": "Kurapika",
+    "description": "Immobilize target",
+    "charge_multipliers": [
+      1.0,
+      1.15,
+      1.35,
+      1.6
+    ]
+  },
+  {
+    "id": "kurapika_emperor_time",
+    "name": "Emperor Time",
+    "category": "Specialist",
+    "user": "Kurapika",
+    "description": "Boost all affinities",
+    "charge_multipliers": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "id": "uvogin_big_bang_impact",
+    "name": "Big Bang Impact",
+    "category": "Enhancer",
+    "user": "Uvogin",
+    "description": "Mega punch",
+    "charge_multipliers": [
+      1.0,
+      1.3,
+      1.7,
+      2.4
+    ]
+  },
+  {
+    "id": "razor_aura_ball",
+    "name": "Aura Ball",
+    "category": "Emitter",
+    "user": "Razor",
+    "description": "Aura dodgeball",
+    "charge_multipliers": [
+      1.0,
+      1.2,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "id": "chrollo_skill_hunter",
+    "name": "Skill Hunter",
+    "category": "Specialist",
+    "user": "Chrollo",
+    "description": "Steal hatsu",
+    "charge_multipliers": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "id": "morel_deep_purple",
+    "name": "Deep Purple",
+    "category": "Manipulator",
+    "user": "Morel",
+    "description": "Smoke soldiers",
+    "charge_multipliers": [
+      1.0,
+      1.1,
+      1.25,
+      1.5
+    ]
+  },
+  {
+    "id": "kortopi_gallery_fake",
+    "name": "Gallery Fake",
+    "category": "Conjurer",
+    "user": "Kortopi",
+    "description": "Clone objects",
+    "charge_multipliers": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "id": "netero_bodhisattva",
+    "name": "Guanyin Bodhisattva",
+    "category": "Emitter",
+    "user": "Netero",
+    "description": "Statue palms",
+    "charge_multipliers": [
+      1.0,
+      1.25,
+      1.6,
+      2.3
+    ]
+  },
+  {
+    "id": "knuckle_hakoware",
+    "name": "Hakoware",
+    "category": "Emitter",
+    "user": "Knuckle",
+    "description": "APR counter",
+    "charge_multipliers": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "id": "shizuku_blinky",
+    "name": "Blinky",
+    "category": "Conjurer",
+    "user": "Shizuku",
+    "description": "Vacuum",
+    "charge_multipliers": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "id": "feitan_pain_packer",
+    "name": "Pain Packer",
+    "category": "Transmuter",
+    "user": "Feitan",
+    "description": "Counter sun",
+    "charge_multipliers": [
+      1.0,
+      1.25,
+      1.6,
+      2.2
+    ]
+  }
+]

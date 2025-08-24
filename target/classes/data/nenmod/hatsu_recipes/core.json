@@ -1,0 +1,30 @@
+[
+  {
+    "ability_id": "gon_jajanken",
+    "requires_abilities": [
+      "hisoka_bungee_gum"
+    ],
+    "min_aura_level": 5,
+    "notes": "Learn fundamentals, then craft."
+  },
+  {
+    "ability_id": "killua_godspeed",
+    "requires_abilities": [
+      "hisoka_bungee_gum"
+    ],
+    "min_aura_level": 7,
+    "notes": "Electric aura practice required."
+  },
+  {
+    "ability_id": "kurapika_chain_jail",
+    "requires_abilities": [],
+    "min_aura_level": 6,
+    "notes": "Chain mastery path."
+  },
+  {
+    "ability_id": "razor_aura_ball",
+    "requires_abilities": [],
+    "min_aura_level": 4,
+    "notes": "Emitter basics."
+  }
+]

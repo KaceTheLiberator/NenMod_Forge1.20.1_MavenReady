@@ -1,0 +1,66 @@
+{
+  "uuid_system": {
+    "id": "uuid_system",
+    "name": "UUID System",
+    "affinity": "neutral",
+    "requirements": [
+      "ten"
+    ],
+    "mastery_progression": {
+      "novice": "Basic UUID system activated.",
+      "intermediate": "UUID aligns with Affinity.",
+      "advanced": "UUID systems can cross-check Affinities.",
+      "master": "UUID allows hybrid affinities."
+    },
+    "punishments_by_mastery": {
+      "novice": {
+        "aura_drain": 6
+      },
+      "intermediate": {
+        "aura_drain": 5
+      },
+      "advanced": {
+        "aura_drain": 4
+      },
+      "master": {
+        "aura_drain": 3
+      }
+    },
+    "mastery_bonus": {
+      "effect": "Ability to hybridize and manage affinity.",
+      "type": "hybrid_affinity_boost"
+    }
+  },
+  "affinity_system": {
+    "id": "affinity_system",
+    "name": "Nen Affinity System",
+    "affinity": "neutral",
+    "requirements": [
+      "ten"
+    ],
+    "mastery_progression": {
+      "novice": "Basic affinity established.",
+      "intermediate": "Affinities can be mixed with penalties.",
+      "advanced": "Specialist unlocks hybrid access.",
+      "master": "Mastery unlocks hybrid with minimal penalties."
+    },
+    "punishments_by_mastery": {
+      "novice": {
+        "aura_drain": 5
+      },
+      "intermediate": {
+        "aura_drain": 4
+      },
+      "advanced": {
+        "aura_drain": 3
+      },
+      "master": {
+        "aura_drain": 2
+      }
+    },
+    "mastery_bonus": {
+      "effect": "+5% damage per affinity match (or hybrid penalty reduction).",
+      "type": "affinity_boost"
+    }
+  }
+}

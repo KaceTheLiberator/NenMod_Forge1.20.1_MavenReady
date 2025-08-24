@@ -1,0 +1,34 @@
+{
+  "water_divination": {
+    "id": "water_divination",
+    "name": "Water Divination",
+    "affinity": "neutral",
+    "requirements": [
+      "ten"
+    ],
+    "mastery_progression": {
+      "novice": "Basic divination based on water.",
+      "intermediate": "More consistent results.",
+      "advanced": "Accurate affinity discovery.",
+      "master": "Maximum clarity, clear result."
+    },
+    "punishments_by_mastery": {
+      "novice": {
+        "aura_drain": 5
+      },
+      "intermediate": {
+        "aura_drain": 4
+      },
+      "advanced": {
+        "aura_drain": 3
+      },
+      "master": {
+        "aura_drain": 2
+      }
+    },
+    "mastery_bonus": {
+      "effect": "Increased affinity clarity and success rate.",
+      "type": "affinity_clarity"
+    }
+  }
+}

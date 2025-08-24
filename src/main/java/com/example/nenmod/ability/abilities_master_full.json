@@ -1,0 +1,3651 @@
+{
+  "schema": {
+    "version": 2,
+    "fields": [
+      "id",
+      "name",
+      "category",
+      "user",
+      "type",
+      "description",
+      "gameplay",
+      "requirements",
+      "notes"
+    ],
+    "charge_time_hint_seconds": 1.0,
+    "aura_units_hint": "AU",
+    "balance_profile": "gameplay_friendly"
+  },
+  "abilities": [
+    {
+      "id": "core_ten",
+      "name": "Ten",
+      "category": "Enhancer",
+      "user": "Various",
+      "type": "Stance",
+      "description": "Maintain aura to guard against external nen.",
+      "gameplay": {
+        "aura_cost_base": 5,
+        "cooldown_base": 2,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.3,
+            "mult": 1.1
+          },
+          {
+            "t": 0.6,
+            "mult": 1.15
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "core_ren",
+      "name": "Ren",
+      "category": "Enhancer",
+      "user": "Various",
+      "type": "Stance",
+      "description": "Increase aura output to boost offense.",
+      "gameplay": {
+        "aura_cost_base": 15,
+        "cooldown_base": 6,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 1.8
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "core_ken",
+      "name": "Ken",
+      "category": "Enhancer",
+      "user": "Various",
+      "type": "Stance",
+      "description": "Reinforce aura around the body for defense.",
+      "gameplay": {
+        "aura_cost_base": 12,
+        "cooldown_base": 5,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.35
+          },
+          {
+            "t": 1.0,
+            "mult": 1.7
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "core_ryu",
+      "name": "Ryu",
+      "category": "Enhancer",
+      "user": "Various",
+      "type": "Utility",
+      "description": "Shift aura between offense and defense on the fly.",
+      "gameplay": {
+        "aura_cost_base": 5,
+        "cooldown_base": 2,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.4,
+            "mult": 1.25
+          },
+          {
+            "t": 0.8,
+            "mult": 1.5
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "core_gyo",
+      "name": "Gyo",
+      "category": "Enhancer",
+      "user": "Various",
+      "type": "Utility",
+      "description": "Focus aura into the eyes to see concealed nen.",
+      "gameplay": {
+        "aura_cost_base": 6,
+        "cooldown_base": 3,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.3,
+            "mult": 1.1
+          },
+          {
+            "t": 0.6,
+            "mult": 1.2
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "core_in",
+      "name": "In",
+      "category": "Transmuter",
+      "user": "Various",
+      "type": "Utility",
+      "description": "Conceal one’s aura or abilities.",
+      "gameplay": {
+        "aura_cost_base": 6,
+        "cooldown_base": 4,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.2
+          },
+          {
+            "t": 1.0,
+            "mult": 1.35
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "gon_rock",
+      "name": "Jajanken: Rock",
+      "category": "Enhancer",
+      "user": "Gon Freecss",
+      "type": "Offense",
+      "description": "Close-range aura punch with heavy charge.",
+      "gameplay": {
+        "aura_cost_base": 50,
+        "cooldown_base": 16,
+        "range_m": 2.2,
+        "damage_base": 24,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.6,
+            "mult": 1.7
+          },
+          {
+            "t": 1.0,
+            "mult": 2.2
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "gon_scissors",
+      "name": "Jajanken: Scissors",
+      "category": "Transmuter",
+      "user": "Gon Freecss",
+      "type": "Offense",
+      "description": "Aura blade slash; medium range.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 14,
+        "range_m": 5,
+        "damage_base": 20,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.5
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "gon_paper",
+      "name": "Jajanken: Paper",
+      "category": "Emitter",
+      "user": "Gon Freecss",
+      "type": "Offense",
+      "description": "Ranged aura blast from the palm.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 14,
+        "range_m": 20,
+        "damage_base": 18,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.6,
+            "mult": 1.5
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "gon_adult_rock",
+      "name": "Adult Form Rock",
+      "category": "Enhancer",
+      "user": "Gon Freecss",
+      "type": "Ultimate",
+      "description": "Brief, overwhelming strike in adult form.",
+      "gameplay": {
+        "aura_cost_base": 120,
+        "cooldown_base": 60,
+        "range_m": 3,
+        "damage_base": 60,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.8,
+            "mult": 2.3
+          },
+          {
+            "t": 1.0,
+            "mult": 3.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": true
+      },
+      "notes": "Time-limited steroidal form; heavy aura crash after use."
+    },
+    {
+      "id": "kil_godspeed",
+      "name": "Godspeed (Kanmuru)",
+      "category": "Transmuter",
+      "user": "Killua Zoldyck",
+      "type": "Buff",
+      "description": "Electro-stimulation boosts speed and reflexes.",
+      "gameplay": {
+        "aura_cost_base": 70,
+        "cooldown_base": 28,
+        "range_m": 0,
+        "damage_base": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.6,
+            "mult": 1.8
+          },
+          {
+            "t": 1.0,
+            "mult": 2.4
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kil_thunderbolt",
+      "name": "Thunderbolt",
+      "category": "Transmuter",
+      "user": "Killua Zoldyck",
+      "type": "Offense",
+      "description": "Call down precise lightning.",
+      "gameplay": {
+        "aura_cost_base": 55,
+        "cooldown_base": 12,
+        "range_m": 28,
+        "damage_base": 22,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kil_rhythm_echo",
+      "name": "Rhythm Echo",
+      "category": "Transmuter",
+      "user": "Killua Zoldyck",
+      "type": "Utility",
+      "description": "After-image feints via rhythmic movement.",
+      "gameplay": {
+        "aura_cost_base": 12,
+        "cooldown_base": 6,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "his_bungee_gum",
+      "name": "Bungee Gum",
+      "category": "Transmuter",
+      "user": "Hisoka",
+      "type": "Hybrid",
+      "description": "Aura with properties of rubber and gum; attach/retract.",
+      "gameplay": {
+        "aura_cost_base": 30,
+        "cooldown_base": 6,
+        "range_m": 18,
+        "damage_base": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.6,
+            "mult": 1.6
+          },
+          {
+            "t": 1.0,
+            "mult": 2.2
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "his_texture_surprise",
+      "name": "Texture Surprise",
+      "category": "Transmuter",
+      "user": "Hisoka",
+      "type": "Utility",
+      "description": "Fake textures/skins over objects.",
+      "gameplay": {
+        "aura_cost_base": 10,
+        "cooldown_base": 6,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kura_chain_jail",
+      "name": "Chain Jail",
+      "category": "Conjurer",
+      "user": "Kurapika",
+      "type": "Control",
+      "description": "Chain that enforces Zetsu on Troupe members.",
+      "gameplay": {
+        "aura_cost_base": 60,
+        "cooldown_base": 24,
+        "range_m": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.7,
+            "mult": 1.6
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": true
+      },
+      "requirements": {
+        "vows": [
+          "Troupe-only bind"
+        ]
+      }
+    },
+    {
+      "id": "kura_judgement_chain",
+      "name": "Judgement Chain",
+      "category": "Conjurer",
+      "user": "Kurapika",
+      "type": "Debuff",
+      "description": "Heart-binding chain with conditional execution.",
+      "gameplay": {
+        "aura_cost_base": 90,
+        "cooldown_base": 40,
+        "range_m": 8,
+        "damage_base": 50,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.7,
+            "mult": 1.8
+          },
+          {
+            "t": 1.0,
+            "mult": 2.3
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": true
+      },
+      "requirements": {
+        "vows": [
+          "Conditioned kill oath"
+        ]
+      }
+    },
+    {
+      "id": "kura_dowsing_chain",
+      "name": "Dowsing Chain",
+      "category": "Conjurer",
+      "user": "Kurapika",
+      "type": "Utility",
+      "description": "Locate targets, detect lies, block blades.",
+      "gameplay": {
+        "aura_cost_base": 25,
+        "cooldown_base": 10,
+        "range_m": 15,
+        "damage_base": 8,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 1.8
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kura_steel_chain",
+      "name": "Steel Chain",
+      "category": "Conjurer",
+      "user": "Kurapika",
+      "type": "Offense",
+      "description": "Harpoon chain that steals aura temporarily.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 14,
+        "range_m": 12,
+        "damage_base": 16,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kura_emperor_time",
+      "name": "Emperor Time",
+      "category": "Specialist",
+      "user": "Kurapika",
+      "type": "Buff",
+      "description": "Temporarily 100% efficiency in all categories.",
+      "gameplay": {
+        "aura_cost_base": 90,
+        "cooldown_base": 60,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.8,
+            "mult": 1.8
+          },
+          {
+            "t": 1.0,
+            "mult": 2.2
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "leo_remote_punch",
+      "name": "Remote Punch",
+      "category": "Emitter",
+      "user": "Leorio Paradinight",
+      "type": "Offense",
+      "description": "Emit a remote strike linked to a punch.",
+      "gameplay": {
+        "aura_cost_base": 30,
+        "cooldown_base": 10,
+        "range_m": 25,
+        "damage_base": 14,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "zeno_dragon_dive",
+      "name": "Dragon Dive",
+      "category": "Emitter",
+      "user": "Zeno Zoldyck",
+      "type": "Offense",
+      "description": "Raining dragon-shaped aura bombardment.",
+      "gameplay": {
+        "aura_cost_base": 95,
+        "cooldown_base": 35,
+        "range_m": 35,
+        "damage_base": 34,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "silva_explosive_orbs",
+      "name": "Explosive Aura Orbs",
+      "category": "Emitter",
+      "user": "Silva Zoldyck",
+      "type": "Offense",
+      "description": "Launch dense aura orbs that explode on impact.",
+      "gameplay": {
+        "aura_cost_base": 80,
+        "cooldown_base": 24,
+        "range_m": 22,
+        "damage_base": 28,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "ntr_bodhisattva_palm",
+      "name": "100-Type Guanyin: Palm",
+      "category": "Specialist",
+      "user": "Isaac Netero",
+      "type": "Offense",
+      "description": "Summoned bodhisattva delivers rapid palms.",
+      "gameplay": {
+        "aura_cost_base": 120,
+        "cooldown_base": 45,
+        "range_m": 18,
+        "damage_base": 42,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.6,
+            "mult": 1.8
+          },
+          {
+            "t": 1.0,
+            "mult": 2.6
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "ntr_zero_hand",
+      "name": "Zero Hand",
+      "category": "Specialist",
+      "user": "Isaac Netero",
+      "type": "Ultimate",
+      "description": "Massive aura burst exhausting all Nen.",
+      "gameplay": {
+        "aura_cost_base": 160,
+        "cooldown_base": 80,
+        "range_m": 30,
+        "damage_base": 90,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.85,
+            "mult": 2.6
+          },
+          {
+            "t": 1.0,
+            "mult": 3.4
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": true
+      },
+      "notes": "Leaves user drained."
+    },
+    {
+      "id": "chl_bandits_secret",
+      "name": "Bandit’s Secret (Skill Hunter)",
+      "category": "Specialist",
+      "user": "Chrollo Lucilfer",
+      "type": "Special",
+      "description": "Steal/store abilities with theft conditions.",
+      "gameplay": {
+        "aura_cost_base": 110,
+        "cooldown_base": 40,
+        "range_m": 8,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.7,
+            "mult": 1.7
+          },
+          {
+            "t": 1.0,
+            "mult": 2.4
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      },
+      "notes": "Bookmark support for concurrent use."
+    },
+    {
+      "id": "fkt_ripper_cyclotron",
+      "name": "Ripper Cyclotron",
+      "category": "Enhancer",
+      "user": "Phinks",
+      "type": "Offense",
+      "description": "Wind-up rotation punch releasing stored power.",
+      "gameplay": {
+        "aura_cost_base": 50,
+        "cooldown_base": 10,
+        "range_m": 2.2,
+        "damage_base": 30,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.8,
+            "mult": 2.2
+          },
+          {
+            "t": 1.0,
+            "mult": 2.8
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "fkn_double_machine_gun",
+      "name": "Double Machine Gun",
+      "category": "Emitter",
+      "user": "Franklin",
+      "type": "Offense",
+      "description": "Emit rapid-fire aura bullets from fingertips.",
+      "gameplay": {
+        "aura_cost_base": 70,
+        "cooldown_base": 16,
+        "range_m": 28,
+        "damage_base": 14,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "fai_pain_packer",
+      "name": "Pain Packer: Rising Sun",
+      "category": "Transmuter",
+      "user": "Feitan",
+      "type": "Ultimate",
+      "description": "Convert pain to heat explosion.",
+      "gameplay": {
+        "aura_cost_base": 120,
+        "cooldown_base": 60,
+        "range_m": 15,
+        "damage_base": 70,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.8,
+            "mult": 2.3
+          },
+          {
+            "t": 1.0,
+            "mult": 3.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": true
+      },
+      "notes": "Requires taking damage to charge."
+    },
+    {
+      "id": "szk_blinky",
+      "name": "Blinky (Deme-chan)",
+      "category": "Conjurer",
+      "user": "Shizuku",
+      "type": "Utility",
+      "description": "Vacuum conjuration that ignores typical mass rules.",
+      "gameplay": {
+        "aura_cost_base": 35,
+        "cooldown_base": 10,
+        "range_m": 5,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "shl_black_voice",
+      "name": "Black Voice",
+      "category": "Conjurer",
+      "user": "Shalnark",
+      "type": "Control",
+      "description": "Control targets via attached device; aura upkeep.",
+      "gameplay": {
+        "aura_cost_base": 60,
+        "cooldown_base": 20,
+        "range_m": 30,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "shl_auto_pilot",
+      "name": "Auto-Pilot Mode",
+      "category": "Manipulator",
+      "user": "Shalnark",
+      "type": "Buff",
+      "description": "Self-control burst by inserting antenna.",
+      "gameplay": {
+        "aura_cost_base": 65,
+        "cooldown_base": 28,
+        "range_m": 0,
+        "damage_base": 20,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "mch_nen_threads",
+      "name": "Nen Threads",
+      "category": "Manipulator",
+      "user": "Machi",
+      "type": "Utility",
+      "description": "Ultra-fine nen threads; sew wounds or bind foes.",
+      "gameplay": {
+        "aura_cost_base": 28,
+        "cooldown_base": 8,
+        "range_m": 12,
+        "damage_base": 6,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "pak_memory_bomb",
+      "name": "Memory Bomb",
+      "category": "Specialist",
+      "user": "Pakunoda",
+      "type": "Special",
+      "description": "Transfer/erase memories via bullets.",
+      "gameplay": {
+        "aura_cost_base": 70,
+        "cooldown_base": 24,
+        "range_m": 15,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "krp_gallery_fake",
+      "name": "Gallery Fake",
+      "category": "Conjurer",
+      "user": "Kortopi",
+      "type": "Utility",
+      "description": "Create faithful replicas with time limit.",
+      "gameplay": {
+        "aura_cost_base": 60,
+        "cooldown_base": 20,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "nbg_enhanced_iai",
+      "name": "Enhanced Iai",
+      "category": "Enhancer",
+      "user": "Nobunaga",
+      "type": "Offense",
+      "description": "Amplified draw-cut with aura focus.",
+      "gameplay": {
+        "aura_cost_base": 40,
+        "cooldown_base": 10,
+        "range_m": 3,
+        "damage_base": 22,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "bnn_jupiter",
+      "name": "Battle Cantabile: Jupiter",
+      "category": "Emitter",
+      "user": "Bonolenov",
+      "type": "Offense",
+      "description": "Emit compressed air sphere (Jupiter) to crush.",
+      "gameplay": {
+        "aura_cost_base": 95,
+        "cooldown_base": 28,
+        "range_m": 18,
+        "damage_base": 44,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kal_paper_fan",
+      "name": "Paper Fan Dance",
+      "category": "Conjurer",
+      "user": "Kalluto",
+      "type": "Offense",
+      "description": "Razor-sharp paper confetti control.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 10,
+        "range_m": 14,
+        "damage_base": 16,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "rzr_aura_ball",
+      "name": "Aura Ball",
+      "category": "Emitter",
+      "user": "Razor",
+      "type": "Offense",
+      "description": "Emit condensed aura sphere; explosive throw.",
+      "gameplay": {
+        "aura_cost_base": 55,
+        "cooldown_base": 10,
+        "range_m": 24,
+        "damage_base": 20,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "rzr_14_devils",
+      "name": "14 Devils",
+      "category": "Emitter",
+      "user": "Razor",
+      "type": "Summon",
+      "description": "Create devils to assist in battle with throws.",
+      "gameplay": {
+        "aura_cost_base": 65,
+        "cooldown_base": 20,
+        "range_m": 18,
+        "damage_base": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "gen_countdown",
+      "name": "Countdown",
+      "category": "Emitter",
+      "user": "Genthru",
+      "type": "Debuff",
+      "description": "Attach time bomb through contact.",
+      "gameplay": {
+        "aura_cost_base": 70,
+        "cooldown_base": 30,
+        "range_m": 6,
+        "damage_base": 60,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.8,
+            "mult": 2.0
+          },
+          {
+            "t": 1.0,
+            "mult": 2.6
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": true
+      },
+      "notes": "Requires prior tag conditions."
+    },
+    {
+      "id": "gen_little_flower",
+      "name": "Little Flower",
+      "category": "Conjurer",
+      "user": "Genthru",
+      "type": "Offense",
+      "description": "Palm explosion burst at close range.",
+      "gameplay": {
+        "aura_cost_base": 40,
+        "cooldown_base": 8,
+        "range_m": 2,
+        "damage_base": 18,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "sub_contact",
+      "name": "Contact",
+      "category": "Emitter",
+      "user": "Sub",
+      "type": "Utility",
+      "description": "Establish remote contact trigger for bombs.",
+      "gameplay": {
+        "aura_cost_base": 20,
+        "cooldown_base": 8,
+        "range_m": 20,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "bara_ace",
+      "name": "Ace",
+      "category": "Emitter",
+      "user": "Bara",
+      "type": "Buff",
+      "description": "Boost detonation timing/strength for teammates.",
+      "gameplay": {
+        "aura_cost_base": 25,
+        "cooldown_base": 12,
+        "range_m": 0,
+        "damage_base": 6,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "knk_hakoware",
+      "name": "Hakoware (APR)",
+      "category": "Emitter",
+      "user": "Knuckle Bine",
+      "type": "Debuff",
+      "description": "Aura debt marker that can bankrupt and seal nen.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 14,
+        "range_m": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      },
+      "notes": "Triggers Zetsu window at bankruptcy."
+    },
+    {
+      "id": "sht_hotel_rafflesia",
+      "name": "Hotel Rafflesia",
+      "category": "Conjurer",
+      "user": "Shoot McMahon",
+      "type": "Control",
+      "description": "Conjure floating hand pods to capture pieces.",
+      "gameplay": {
+        "aura_cost_base": 55,
+        "cooldown_base": 16,
+        "range_m": 14,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "mrl_deep_purple",
+      "name": "Deep Purple",
+      "category": "Manipulator",
+      "user": "Morel",
+      "type": "Summon",
+      "description": "Command smoke soldiers with formations.",
+      "gameplay": {
+        "aura_cost_base": 70,
+        "cooldown_base": 18,
+        "range_m": 20,
+        "damage_base": 8,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": "AI modes: patrol, shield, intercept."
+      }
+    },
+    {
+      "id": "mrl_smoke_prison",
+      "name": "Smoke Prison",
+      "category": "Manipulator",
+      "user": "Morel",
+      "type": "Control",
+      "description": "Dense smoke barrier cage.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 14,
+        "range_m": 12,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "knv_hide_seek",
+      "name": "Hide and Seek (Apartment)",
+      "category": "Emitter",
+      "user": "Knov",
+      "type": "Utility",
+      "description": "Create doors to 4D apartment (pocket rooms).",
+      "gameplay": {
+        "aura_cost_base": 65,
+        "cooldown_base": 20,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "mel_perfect_plan",
+      "name": "Perfect Plan",
+      "category": "Specialist",
+      "user": "Meleoron",
+      "type": "Special",
+      "description": "Perfect invisibility while breath is held.",
+      "gameplay": {
+        "aura_cost_base": 60,
+        "cooldown_base": 18,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "ikl_sniper_octopus",
+      "name": "Sniper Octopus",
+      "category": "Manipulator",
+      "user": "Ikalgo",
+      "type": "Offense",
+      "description": "Precision multi-armed shooting with nen-guided rounds.",
+      "gameplay": {
+        "aura_cost_base": 35,
+        "cooldown_base": 8,
+        "range_m": 28,
+        "damage_base": 12,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "plm_wink_blue",
+      "name": "Wink Blue",
+      "category": "Manipulator",
+      "user": "Palm Siberia",
+      "type": "Control",
+      "description": "Water-based control/track marker when submerged.",
+      "gameplay": {
+        "aura_cost_base": 38,
+        "cooldown_base": 12,
+        "range_m": 10,
+        "damage_base": 6,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "pouf_scale",
+      "name": "Spiritual Message",
+      "category": "Manipulator",
+      "user": "Shaiapouf",
+      "type": "Buff",
+      "description": "Scale-like fragments to monitor/influence emotions.",
+      "gameplay": {
+        "aura_cost_base": 55,
+        "cooldown_base": 16,
+        "range_m": 30,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "pit_doctor_blythe",
+      "name": "Doctor Blythe",
+      "category": "Specialist",
+      "user": "Neferpitou",
+      "type": "Special",
+      "description": "Conjure doctor puppet for extreme healing.",
+      "gameplay": {
+        "aura_cost_base": 80,
+        "cooldown_base": 30,
+        "range_m": 2,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "pit_terpsichora",
+      "name": "Terpsichora",
+      "category": "Specialist",
+      "user": "Neferpitou",
+      "type": "Buff",
+      "description": "Puppet strings to control the user’s body.",
+      "gameplay": {
+        "aura_cost_base": 75,
+        "cooldown_base": 26,
+        "range_m": 0,
+        "damage_base": 18,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "youpi_morph_rage",
+      "name": "Rage Morph",
+      "category": "Enhancer",
+      "user": "Menthuthuyoupi",
+      "type": "Buff",
+      "description": "Transform and emit explosive rage bursts.",
+      "gameplay": {
+        "aura_cost_base": 85,
+        "cooldown_base": 20,
+        "range_m": 5,
+        "damage_base": 30,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "mer_aura_burst",
+      "name": "Royal Aura Burst",
+      "category": "Enhancer",
+      "user": "Meruem",
+      "type": "Ultimate",
+      "description": "Overwhelming aura pressure burst.",
+      "gameplay": {
+        "aura_cost_base": 140,
+        "cooldown_base": 60,
+        "range_m": 20,
+        "damage_base": 70,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.8,
+            "mult": 2.2
+          },
+          {
+            "t": 1.0,
+            "mult": 3.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": true
+      },
+      "notes": "Boss-tier output."
+    },
+    {
+      "id": "neo_lovely_ghostwriter",
+      "name": "Lovely Ghostwriter",
+      "category": "Specialist",
+      "user": "Neon Nostrade",
+      "type": "Special",
+      "description": "Prophetic writing ability with conditions.",
+      "gameplay": {
+        "aura_cost_base": 65,
+        "cooldown_base": 35,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.5
+          },
+          {
+            "mastery": 50,
+            "mult": 2.1
+          },
+          {
+            "mastery": 75,
+            "mult": 2.9
+          },
+          {
+            "mastery": 100,
+            "mult": 4.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "bsc_mass_enhance",
+      "name": "Massage Power-Up",
+      "category": "Transmuter",
+      "user": "Biscuit Krueger",
+      "type": "Buff",
+      "description": "Body conditioning through nen massage.",
+      "gameplay": {
+        "aura_cost_base": 40,
+        "cooldown_base": 16,
+        "range_m": 0,
+        "damage_base": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "gor_gorilla_pair",
+      "name": "Rock-Rock Gorillas",
+      "category": "Conjurer",
+      "user": "Goreinu",
+      "type": "Summon",
+      "description": "Conjure two gorillas linked to simple commands.",
+      "gameplay": {
+        "aura_cost_base": 40,
+        "cooldown_base": 12,
+        "range_m": 10,
+        "damage_base": 8,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "bai_lipstick",
+      "name": "Instant Lover",
+      "category": "Manipulator",
+      "user": "Baise",
+      "type": "Control",
+      "description": "Kiss-bound control with severe conditions.",
+      "gameplay": {
+        "aura_cost_base": 35,
+        "cooldown_base": 24,
+        "range_m": 1,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": true
+      },
+      "notes": "PVP only due to consent rules."
+    },
+    {
+      "id": "sqz_scream",
+      "name": "Scream",
+      "category": "Emitter",
+      "user": "Squala",
+      "type": "Utility",
+      "description": "Whistle-based emitter signal to control beasts.",
+      "gameplay": {
+        "aura_cost_base": 15,
+        "cooldown_base": 8,
+        "range_m": 30,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "ill_needle_people",
+      "name": "Needle People",
+      "category": "Manipulator",
+      "user": "Illumi Zoldyck",
+      "type": "Control",
+      "description": "Turn targets into remote puppets via needles.",
+      "gameplay": {
+        "aura_cost_base": 70,
+        "cooldown_base": 24,
+        "range_m": 18,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "ill_face_fix",
+      "name": "Face Fix",
+      "category": "Manipulator",
+      "user": "Illumi Zoldyck",
+      "type": "Utility",
+      "description": "Alter facial features and aura signature with needles.",
+      "gameplay": {
+        "aura_cost_base": 25,
+        "cooldown_base": 10,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "kit_crazy_slots",
+      "name": "Crazy Slots",
+      "category": "Conjurer",
+      "user": "Kite",
+      "type": "Special",
+      "description": "Random weapon conjuration from roulette.",
+      "gameplay": {
+        "aura_cost_base": 65,
+        "cooldown_base": 16,
+        "range_m": 14,
+        "damage_base": 22,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      },
+      "notes": "Roll yields unique weapon forms."
+    },
+    {
+      "id": "rzr_throw_mastery",
+      "name": "Throw Mastery",
+      "category": "Emitter",
+      "user": "Razor",
+      "type": "Buff",
+      "description": "Enhance throws and rebound control.",
+      "gameplay": {
+        "aura_cost_base": 25,
+        "cooldown_base": 8,
+        "range_m": 0,
+        "damage_base": 6,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "cst_card_conjury",
+      "name": "Card Conjury",
+      "category": "Conjurer",
+      "user": "Custom",
+      "type": "Offense",
+      "description": "Conjure cards with imbued statuses.",
+      "gameplay": {
+        "aura_cost_base": 30,
+        "cooldown_base": 8,
+        "range_m": 16,
+        "damage_base": 10,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "cst_coin_bind",
+      "name": "Coin Bind",
+      "category": "Conjurer",
+      "user": "Custom",
+      "type": "Control",
+      "description": "Weighted coins tether targets via aura lines.",
+      "gameplay": {
+        "aura_cost_base": 28,
+        "cooldown_base": 10,
+        "range_m": 14,
+        "damage_base": 6,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.3
+          },
+          {
+            "mastery": 50,
+            "mult": 1.7
+          },
+          {
+            "mastery": 75,
+            "mult": 2.2
+          },
+          {
+            "mastery": 100,
+            "mult": 2.8
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "cst_pocket_space",
+      "name": "Pocket Space",
+      "category": "Emitter",
+      "user": "Custom",
+      "type": "Utility",
+      "description": "Bounded subspace for items; drains while open.",
+      "gameplay": {
+        "aura_cost_base": 45,
+        "cooldown_base": 16,
+        "range_m": 0,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    },
+    {
+      "id": "cst_floating_hands",
+      "name": "Floating Hands",
+      "category": "Conjurer",
+      "user": "Custom",
+      "type": "Utility",
+      "description": "Spectral hands to manipulate/grapple.",
+      "gameplay": {
+        "aura_cost_base": 30,
+        "cooldown_base": 10,
+        "range_m": 12,
+        "damage_base": 4,
+        "chargeable": true,
+        "charge_curve": [
+          {
+            "t": 0,
+            "mult": 1.0
+          },
+          {
+            "t": 0.5,
+            "mult": 1.4
+          },
+          {
+            "t": 1.0,
+            "mult": 2.0
+          }
+        ],
+        "mastery_scaling": [
+          {
+            "mastery": 0,
+            "mult": 1.0
+          },
+          {
+            "mastery": 25,
+            "mult": 1.2
+          },
+          {
+            "mastery": 50,
+            "mult": 1.45
+          },
+          {
+            "mastery": 75,
+            "mult": 1.7
+          },
+          {
+            "mastery": 100,
+            "mult": 2.0
+          }
+        ],
+        "pvp_only": false
+      }
+    }
+  ]
+}

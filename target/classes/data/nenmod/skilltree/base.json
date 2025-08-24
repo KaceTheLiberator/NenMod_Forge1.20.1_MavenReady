@@ -1,0 +1,110 @@
+[
+  {
+    "id": "enh_hp_1",
+    "name": "Fortify I",
+    "affinity": "Enhancer",
+    "type": "stat",
+    "cost": 1,
+    "requires": [],
+    "payload": "max_health",
+    "value": 2.0
+  },
+  {
+    "id": "enh_unarmed_1",
+    "name": "Fist Focus I",
+    "affinity": "Enhancer",
+    "type": "stat",
+    "cost": 1,
+    "requires": [
+      "enh_hp_1"
+    ],
+    "payload": "unarmed_damage",
+    "value": 0.5
+  },
+  {
+    "id": "emit_range_1",
+    "name": "Projection I",
+    "affinity": "Emitter",
+    "type": "stat",
+    "cost": 1,
+    "requires": [],
+    "payload": "ability_range",
+    "value": 1.0
+  },
+  {
+    "id": "trans_pen_1",
+    "name": "Arc Penetration I",
+    "affinity": "Transmuter",
+    "type": "stat",
+    "cost": 1,
+    "requires": [],
+    "payload": "armor_pen",
+    "value": 0.05
+  },
+  {
+    "id": "conj_speed_1",
+    "name": "Weapon Handling I",
+    "affinity": "Conjurer",
+    "type": "stat",
+    "cost": 1,
+    "requires": [],
+    "payload": "weapon_speed",
+    "value": 0.05
+  },
+  {
+    "id": "mani_control_1",
+    "name": "Control I",
+    "affinity": "Manipulator",
+    "type": "stat",
+    "cost": 1,
+    "requires": [],
+    "payload": "control_range",
+    "value": 1.0
+  },
+  {
+    "id": "spec_key_1",
+    "name": "Specialist Keystone",
+    "affinity": "Specialist",
+    "type": "vow",
+    "cost": 3,
+    "requires": [],
+    "payload": "specialist_key",
+    "value": 1
+  },
+  {
+    "id": "ability_godspeed",
+    "name": "Unlock: Godspeed",
+    "affinity": "Transmuter",
+    "type": "ability",
+    "cost": 3,
+    "requires": [
+      "trans_pen_1"
+    ],
+    "payload": "killua_godspeed",
+    "value": 1
+  },
+  {
+    "id": "ability_bungee",
+    "name": "Unlock: Bungee Gum",
+    "affinity": "Transmuter",
+    "type": "ability",
+    "cost": 2,
+    "requires": [
+      "trans_pen_1"
+    ],
+    "payload": "hisoka_bungee_gum",
+    "value": 1
+  },
+  {
+    "id": "ability_jajanken",
+    "name": "Unlock: Jajanken",
+    "affinity": "Enhancer",
+    "type": "ability",
+    "cost": 2,
+    "requires": [
+      "enh_hp_1"
+    ],
+    "payload": "gon_jajanken",
+    "value": 1
+  }
+]

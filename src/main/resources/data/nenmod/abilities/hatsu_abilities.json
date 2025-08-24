@@ -1,0 +1,138 @@
+{
+  "enhancer": [
+    {
+      "id": "jajanken",
+      "name": "Jajanken",
+      "affinity": "enhancer",
+      "requirements": [
+        "ren"
+      ],
+      "mastery_progression": {
+        "novice": "Base Jajanken unlocked.",
+        "intermediate": "Scissors unlocked.",
+        "advanced": "Paper unlocked.",
+        "master": "Mastery unlocked with reduced aura cost."
+      },
+      "punishments_by_mastery": {
+        "novice": {
+          "aura_drain": 10
+        },
+        "intermediate": {
+          "aura_drain": 8
+        },
+        "advanced": {
+          "aura_drain": 6
+        },
+        "master": {
+          "aura_drain": 4
+        }
+      },
+      "mastery_bonus": {
+        "effect": "+10% melee damage at Mastery",
+        "type": "damage_boost"
+      }
+    }
+  ],
+  "emitter": [
+    {
+      "id": "punch_teleport",
+      "name": "Punch Teleport",
+      "affinity": "emitter",
+      "requirements": [
+        "ren"
+      ],
+      "mastery_progression": {
+        "novice": "Unlocks basic punch teleportation.",
+        "intermediate": "Increased range.",
+        "advanced": "Reduced cooldown.",
+        "master": "Teleportation consumes less aura."
+      },
+      "punishments_by_mastery": {
+        "novice": {
+          "aura_drain": 8
+        },
+        "intermediate": {
+          "aura_drain": 6
+        },
+        "advanced": {
+          "aura_drain": 4
+        },
+        "master": {
+          "aura_drain": 2
+        }
+      },
+      "mastery_bonus": {
+        "effect": "+20% range at Mastery",
+        "type": "teleport_range"
+      }
+    }
+  ],
+  "transmuter": [
+    {
+      "id": "bungee_gum",
+      "name": "Bungee Gum",
+      "affinity": "transmuter",
+      "requirements": [
+        "ren"
+      ],
+      "mastery_progression": {
+        "novice": "Unlocks bungee gum usage.",
+        "intermediate": "Increased elasticity.",
+        "advanced": "Improved tethering.",
+        "master": "Infinite elasticity and reduced cost."
+      },
+      "punishments_by_mastery": {
+        "novice": {
+          "aura_drain": 6
+        },
+        "intermediate": {
+          "aura_drain": 4
+        },
+        "advanced": {
+          "aura_drain": 3
+        },
+        "master": {
+          "aura_drain": 2
+        }
+      },
+      "mastery_bonus": {
+        "effect": "+10% elasticity at Mastery",
+        "type": "elastic_boost"
+      }
+    }
+  ],
+  "conjurer": [
+    {
+      "id": "chain_jail",
+      "name": "Chain Jail",
+      "affinity": "conjurer",
+      "requirements": [
+        "ren"
+      ],
+      "mastery_progression": {
+        "novice": "Chains appear briefly, restricts target.",
+        "intermediate": "Chains last longer.",
+        "advanced": "Chains can restrict multiple targets.",
+        "master": "Chains are efficient and stronger."
+      },
+      "punishments_by_mastery": {
+        "novice": {
+          "aura_drain": 12
+        },
+        "intermediate": {
+          "aura_drain": 10
+        },
+        "advanced": {
+          "aura_drain": 8
+        },
+        "master": {
+          "aura_drain": 6
+        }
+      },
+      "mastery_bonus": {
+        "effect": "+5% chain strength at Mastery",
+        "type": "chain_boost"
+      }
+    }
+  ]
+}

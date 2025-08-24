@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+  modId="nenmod"
+  version="1.20.1"
+  displayName="Nen Mod"
+  description='''Hunter x Hunter Nen systems — abilities, skill tree, crafting'''
+[[dependencies.nenmod]]
+  modId="nenmod"
+  mandatory=true
+  versionRange="[47,)"
+  ordering="NONE"
+  side="BOTH"
+[[dependencies.nenmod]]
+  modId="nenmod"
+  mandatory=true
+  versionRange="[1.20.1]"
+  ordering="NONE"
+  side="BOTH"
